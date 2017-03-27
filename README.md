@@ -14,14 +14,14 @@ Once, the GoPiGo is built, setup VNC.  I updated the Raspbian software and insta
 
 More info on GoPiGo Python programming is [here](https://www.dexterindustries.com/GoPiGo/programming/python-programming-for-the-raspberry-pi-gopigo/)
 
-Follow the instructions [here](http://docs.kitt.ai/snowboy/) to download and install Snowboy.
+Follow the instructions [here](http://docs.kitt.ai/snowboy/) to download and install Snowboy. Also, check out their [Github page](https://github.com/kitt-ai/snowboy).
 In the downloads section, download and unpack the apppropriate tar file.  Then, follow the instructions to access the microphone.
 They have a few demo python programs to play with, as well.
 
 Once everything is installed, follow their instructions to train a voice model for your hotword(s) or play with their demo.py file or their demo2.py (for detecting 2 hotwords)
 
 The GoPiSnow.py file is a minimally changed version of Snowboy's demo2.py.  The changes  are:
-1. import the gopigo module
+1. import the gopigo module and import sleep from time
 2. define the variable "models" as a list of .pmdl files (as opposed to having to list them at the command line when running the program)
 3. Several new functions defined to control various GoPiGo movements
 4. The "Ding" and "Dong" callbacks have been redefined as a set listing the new GoPiGo functions
