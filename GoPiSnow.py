@@ -93,7 +93,7 @@ signal.signal(signal.SIGINT, signal_handler)
 enable_servo()
 servo(90)
 
-sensitivity = 0.37
+sensitivity = 0.35
 detector = snowboydecoder.HotwordDetector(models, sensitivity=sensitivity)
 callbacks = [lambda: go(), lambda: lefter(), lambda: righter(), lambda: backr(), lambda: dance(), lambda: blinker(), lambda: look()]
 
