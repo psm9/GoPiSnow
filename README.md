@@ -22,12 +22,12 @@ Once everything is installed, follow their instructions to train a voice model f
 
 The GoPiSnow.py file is a minimally changed version of Snowboy's demo2.py.  The changes  are:
 1. Import the gopigo module and import sleep from time - (Lines 4 and 5)
-2. Define the variable "models" as a list of .pmdl files, as opposed to having to list them at the command line when running the program. (Line 21)
+2. Define the variable "models" as a list of .pmdl files, as opposed to having to list them at the command line when running the program. (Line 21). Make sure you include the correct folder/file path
 3. Several new functions defined to control various GoPiGo movements ("lefter", "righter", "dance",etc...) (Lines 23-86)
 4. Commands to enable and reset the servo(for a camera) (Lines 93-94)
 5. Adjust Snowboy's sensitivity. This part was trial and error to find a number minimize false positives, but also doesn't miss many commands. (Line 96)
 6. Redefining "callbacks" as a set listing the new GoPiGo functions, instead of Snowboy's "Ding"/"Dong" commands (Line 98)
 
-In order for it to work, you'll have to have downloaded extracted all of the Snowboy files. Make sure the GoPiSnow.py file is in the same folder as snowboydecoder and snowboy.py
+In order for it to work, you'll have to have downloaded and extracted all of the Snowboy files. Make sure the GoPiSnow.py file is in the same folder as snowboydecoder.py and snowboydetect.py. Make sure you have the right file paths for the hotword models (the pmdll files).
 
 That's it. Once you have that working, it's pretty easy 
