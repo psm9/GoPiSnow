@@ -15,9 +15,9 @@ Once, the GoPiGo is built, setup VNC.  I updated the Raspbian software and insta
 
 More info on GoPiGo Python programming is [here](https://www.dexterindustries.com/GoPiGo/programming/python-programming-for-the-raspberry-pi-gopigo/)
 
-Follow the instructions [here](http://docs.kitt.ai/snowboy/) to download and install Snowboy. Also, check out their [Github page](https://github.com/kitt-ai/snowboy).
-In the downloads section, download and unpack the apppropriate tar file.  Then, follow the instructions to access the microphone.
-They have a few demo python programs to play with, as well.
+[Snowboy's Github page](https://github.com/kitt-ai/snowboy) is here. For the Raspberry pi, scroll down to "Precompiled Node Module" and follow the instructions.  Scroll down a bit more to "Dependencies" and install the necessary software.
+
+Snowboy has further [documentation here](http://docs.kitt.ai/snowboy/).  They have a few demo python programs to play with, as well.
 
 Once everything is installed, follow their instructions to train a voice model for your hotword(s) or play with their demo.py file or their demo2.py (for detecting 2 hotwords).
 
