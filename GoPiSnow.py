@@ -2,15 +2,11 @@ import snowboydecoder
 import sys
 import signal
 from gopigo import *
-import picamera
 from time import sleep
 
 # Demo code for listening two hotwords at the same time
 
 interrupted = False
-camera=picamera.PiCamera()
-camera.vflip= True
-camera.hflip= True
 
 def signal_handler(signal, frame):
     global interrupted
@@ -23,7 +19,6 @@ def interrupt_callback():
 
 
 models = ["pauls/go.pmdl", "pauls/left.pmdl", "pauls/right.pmdl", "pauls/backwards.pmdl", "pauls/robotdance.pmdl", "pauls/blinklights.pmdl", "pauls/look.pmdl"]
-camera.start_recording('video.h264')
 
 def go():
     fwd()
