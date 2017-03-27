@@ -31,4 +31,6 @@ The GoPiSnow.py file is a minimally changed version of Snowboy's demo2.py.  The 
 
 In order for it to work, you'll have to have downloaded and extracted all of the Snowboy files. Make sure the GoPiSnow.py file is in the same folder as snowboydecoder.py and snowboydetect.py. Make sure you have the right file paths for the hotword models (the pmdll files).
 
-That's it. Once you have that working, it's pretty easy 
+That's it. Just hit F5 and off you go.
+
+Once you have this figured out, I would imagine you can control almost anything  a Raspberry Pi can do with a Snowboy Hotword
