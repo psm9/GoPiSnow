@@ -1,7 +1,8 @@
 # GoPiSnow
 GoPiGo robot controlled by voice command hotwords detected by Snowboy
 
-I'm very new at Github, Python, and the Raspberry Pi, so forgive me if this is a bit rough.
+I'm only a few months into using Python, and the Raspberry Pi and haven't used github before, so forgive me if this is a bit rough.
+
 I saw an article in MagPi about controlling a Raspberry Pi using Alexa. In trying to set that up, I stumbled on this solution instead using [Snowboy](http://docs.kitt.ai/snowboy/)
 The code I changed is quite simple - just a couple changes to Snowboy's demo code.
 
