@@ -18,7 +18,7 @@ def interrupt_callback():
     return interrupted
 
 
-models = ["pauls/go.pmdl", "pauls/left.pmdl", "pauls/right.pmdl", "pauls/backwards.pmdl", "pauls/robotdance.pmdl", "pauls/blinklights.pmdl", "pauls/look.pmdl"]
+models = ["FILE_PATH/go.pmdl", "FILE_PATH/left.pmdl", "FILE_PATH/right.pmdl", "FILE_PATH/backwards.pmdl", "FILE_PATH/robotdance.pmdl", "FILE_PATH/blinklights.pmdl", "FILE_PATH/look.pmdl"]
 
 def go():
     fwd()
