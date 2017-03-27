@@ -18,12 +18,16 @@ Follow the instructions [here](http://docs.kitt.ai/snowboy/) to download and ins
 In the downloads section, download and unpack the apppropriate tar file.  Then, follow the instructions to access the microphone.
 They have a few demo python programs to play with, as well.
 
-Once everything is installed, follow their instructions to train a voice model for your hotword(s) or play with their demo.py file or their demo2.py (for detecting 2 hotwords)
+Once everything is installed, follow their instructions to train a voice model for your hotword(s) or play with their demo.py file or their demo2.py (for detecting 2 hotwords).
 
 The GoPiSnow.py file is a minimally changed version of Snowboy's demo2.py.  The changes  are:
-1. import the gopigo module and import sleep from time
-2. define the variable "models" as a list of .pmdl files (as opposed to having to list them at the command line when running the program)
-3. Several new functions defined to control various GoPiGo movements
-4. The "Ding" and "Dong" callbacks have been redefined as a set listing the new GoPiGo functions
+1. Import the gopigo module and import sleep from time - (Lines 4 and 5)
+2. Define the variable "models" as a list of .pmdl files, as opposed to having to list them at the command line when running the program. (Line 21)
+3. Several new functions defined to control various GoPiGo movements ("lefter", "righter", "dance",etc...) (Lines 23-86)
+4. Commands to enable and reset the servo(for a camera) (Lines 93-94)
+5. Adjust Snowboy's sensitivity. This part was trial and error to find a number minimize false positives, but also doesn't miss many commands. (Line 96)
+6. Redefining "callbacks" as a set listing the new GoPiGo functions, instead of Snowboy's "Ding"/"Dong" commands (Line 98)
+
+In order for it to work, you'll have to have downloaded extracted all of the Snowboy files. Make sure the GoPiSnow.py file is in the same folder as snowboydecoder and snowboy.py
 
 That's it. Once you have that working, it's pretty easy 
